@@ -20,6 +20,8 @@ class Festival extends Model
         'city_id'
     ];
 
+    protected $with = ['city', 'type'];
+
     public function type()
     {
         return $this->belongsTo(FestivalType::class);
