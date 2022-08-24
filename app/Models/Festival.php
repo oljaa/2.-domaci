@@ -16,7 +16,8 @@ class Festival extends Model
         'manager',
         'phone',
         'start',
-        'end'
+        'end',
+        'city_id'
     ];
 
     public function type()

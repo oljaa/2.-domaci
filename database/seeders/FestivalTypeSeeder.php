@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\FestivalType;
 use Illuminate\Database\Seeder;
 
 class FestivalTypeSeeder extends Seeder
@@ -13,6 +14,6 @@ class FestivalTypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        FestivalType::factory(5)->create();
     }
 }
